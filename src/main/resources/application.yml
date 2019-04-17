@@ -1,0 +1,21 @@
+hive:
+  url: jdbc:hive2://192.168.126.158:10000
+  driver-class-name: org.apache.hive.jdbc.HiveDriver
+  type: com.alibaba.druid.pool.DruidDataSource
+  user: root
+  password: gj5846gj
+  initialSize: 1
+  minIdle: 3
+  maxActive: 20
+  maxWait: 6000
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 30000
+  validationQuery: select 1
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: false
+  poolPreparedStatements: true
+  maxPoolPreparedStatementPerConnectionSize: 20
+  connectionErrorRetryAttempts: 0
+  breakAfterAcquireFailure: true
+
